@@ -5,7 +5,8 @@ class ProfileTab extends StatefulWidget {
   _ProfileTabState createState() => _ProfileTabState();
 }
 
-class _ProfileTabState extends State<ProfileTab> with SingleTickerProviderStateMixin {
+class _ProfileTabState extends State<ProfileTab>
+    with SingleTickerProviderStateMixin {
   TabController? _tabController;
 
   @override
@@ -44,8 +45,10 @@ class _ProfileTabState extends State<ProfileTab> with SingleTickerProviderStateM
             crossAxisCount: 3,
             mainAxisSpacing: 10,
           ),
+          itemCount: 42,
           itemBuilder: (context, index) {
-            return Image.network("https://picsum.photos/id/${index + 1}/200/200");
+            return Image.network(
+                "https://picsum.photos/id/${index + 1}/200/200");
           },
         ),
         Container(color: Colors.red),
