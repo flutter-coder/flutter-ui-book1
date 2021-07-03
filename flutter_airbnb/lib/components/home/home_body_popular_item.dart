@@ -23,7 +23,7 @@ class HomeBodyPopularItem extends StatelessWidget {
       child: Container(
         // 2. 화면이 줄어들 때 너무 작게 줄어드는 것을 방지하기 위해 최소 제약조건을 잡아준다.
         constraints: BoxConstraints(
-          minWidth: 420,
+          minWidth: 320,
         ),
         child: SizedBox(
           width: popularItemWidth,
