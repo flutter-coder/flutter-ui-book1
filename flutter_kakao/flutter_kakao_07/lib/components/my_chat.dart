@@ -19,14 +19,16 @@ class MyChat extends StatelessWidget {
         children: [
           Text(time, style: TextStyle(fontSize: 12)),
           SizedBox(width: 5),
-          Container(
-            padding: const EdgeInsets.all(8),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(13),
-              color: Color(0xFFfeec34),
+          Flexible(
+            child: Container(
+              padding: const EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(13),
+                color: Color(0xFFfeec34),
+              ),
+              child: Text(text),
             ),
-            child: Text(text),
-          ),
+          )
         ],
       ),
     );
