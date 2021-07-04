@@ -3,11 +3,11 @@ class User {
   final String name;
   final String intro;
 
-  User(
-      {this.backgroundImage =
-          "https://raw.githubusercontent.com/flutter-coder/ui_images/master/messenger_me_1.jpg",
-      required this.name,
-      required this.intro});
+  User({
+    required this.backgroundImage,
+    required this.name,
+    required this.intro,
+  });
 }
 
 final String _urlPrefix =
