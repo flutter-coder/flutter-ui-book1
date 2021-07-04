@@ -11,29 +11,25 @@ class ProfileCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20),
-      child: InkWell(
-        onTap: () {},
-        child: ListTile(
-          leading: CircleAvatar(
-            radius: 20,
-            backgroundImage: NetworkImage(
-              user.backgroundImage,
-            ),
+    return InkWell(
+      onTap: () {},
+      child: ListTile(
+        leading: CircleAvatar(
+          radius: 20,
+          backgroundImage: NetworkImage(
+            user.backgroundImage,
           ),
-          title: Text(
-            user.name,
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 16,
-            ),
+        ),
+        title: Text(
+          user.name,
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 16,
           ),
-          subtitle: Text(
-            user.intro,
-            style: TextStyle(fontSize: 12),
-          ),
-          contentPadding: const EdgeInsets.all(0),
+        ),
+        subtitle: Text(
+          user.intro,
+          style: TextStyle(fontSize: 12),
         ),
       ),
     );
