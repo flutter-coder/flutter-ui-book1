@@ -12,36 +12,32 @@ class ProfileCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20),
-      child: InkWell(
-        onTap: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => ProfileScreen(user: me), // 1
-            ),
-          );
-        },
-        child: ListTile(
-          leading: CircleAvatar(
-            radius: 20,
-            backgroundImage: NetworkImage(
-              user.backgroundImage,
-            ),
+    return InkWell(
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => ProfileScreen(user: user), // 1
           ),
-          title: Text(
-            user.name,
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 16,
-            ),
+        );
+      },
+      child: ListTile(
+        leading: CircleAvatar(
+          radius: 20,
+          backgroundImage: NetworkImage(
+            user.backgroundImage,
           ),
-          subtitle: Text(
-            user.intro,
-            style: TextStyle(fontSize: 12),
+        ),
+        title: Text(
+          user.name,
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 16,
           ),
-          contentPadding: const EdgeInsets.all(0),
+        ),
+        subtitle: Text(
+          user.intro,
+          style: TextStyle(fontSize: 12),
         ),
       ),
     );
