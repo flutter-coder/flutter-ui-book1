@@ -21,9 +21,14 @@ class HomeHeaderAppBar extends StatelessWidget {
   Widget _buildAppBarLogo() {
     return Row(
       children: [
-        Image.asset("assets/logo.png", width: 30, height: 30, color: kAccentColor),
+        Image.asset(
+          "assets/logo.png",
+          width: 30,
+          height: 30,
+          color: Colors.redAccent,
+        ),
         SizedBox(width: gap_s),
-        Text("airbnb", style: h5(mColor: Colors.white)),
+        Text("RoomOfAll", style: h5(mColor: Colors.white)),
       ],
     );
   }

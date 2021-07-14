@@ -13,7 +13,8 @@ class HomeHeaderForm extends StatelessWidget {
       // 2. 정렬 위젯
       child: Align(
         // 3. -1.0 부터 1.0 까지 가로 범위에서 0.1의 값은 5%이다.
-        alignment: screenWidth < 520 ? Alignment(0, 0) : Alignment(-0.6, 0), // 변경
+        alignment:
+            screenWidth < 520 ? Alignment(0, 0) : Alignment(-0.6, 0), // 변경
         child: Container(
           width: 420,
           decoration: BoxDecoration(
@@ -41,12 +42,12 @@ class HomeHeaderForm extends StatelessWidget {
     return Column(
       children: [
         Text(
-          "에어비앤비에서 숙소를 검색하세요.",
+          "모두의숙소에서 숙소를 검색하세요.",
           style: h4(),
         ),
         SizedBox(height: gap_xs),
         Text(
-          "혼자하는 여행에 적합한 개인실부터 여럿이 함께하는 여행에 좋은 '공간전체' 숙소까지, 에어비앤비에 다 있습니다.",
+          "혼자하는 여행에 적합한 개인실부터 여럿이 함께하는 여행에 좋은 '공간전체' 숙소까지, 모두의숙소에 다 있습니다.",
           style: body1(),
         ),
         SizedBox(height: gap_m),
