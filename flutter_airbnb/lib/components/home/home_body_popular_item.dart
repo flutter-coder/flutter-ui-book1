@@ -73,9 +73,10 @@ class HomeBodyPopularItem extends StatelessWidget {
     return Column(
       children: [
         Text(
-          "깔끔하고 다 갖춰져있어서 좋았어요:) 위치도 완전 좋아용 다들 여기 살고싶다구ㅋㅋㅋㅋㅋ 화장실도 3개예요!!! 5명이서 씻는것도 전혀 불편함없이 좋았어요^^ 이불도 포근하고 좋습니당ㅎㅎ",
+          "깔끔하고 다 갖춰져있어서 좋았어요:) 위치도 완전 좋아용 다들 여기 살고싶다구ㅋㅋㅋㅋㅋ 화장실도 3개예요!!! 5명이서 씻는것도 전혀 불편함 없이 좋았어요^^ 이불도 포근하고 좋습니당ㅎㅎ",
           style: body1(),
           maxLines: 3,
+
           overflow: TextOverflow.ellipsis, // 3. 글자가 3 라인을 벗어나면 ... 처리된다.
         ),
         SizedBox(height: gap_s),
