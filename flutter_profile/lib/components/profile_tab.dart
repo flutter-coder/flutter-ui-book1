@@ -29,8 +29,14 @@ class _ProfileTabState extends State<ProfileTab>
     return TabBar(
       controller: _tabController,
       tabs: [
-        Tab(icon: Icon(Icons.directions_car)),
-        Tab(icon: Icon(Icons.directions_transit)),
+        Tab(
+            icon: Icon(
+          Icons.directions_car,
+        )),
+        Tab(
+            icon: Icon(
+          Icons.directions_transit,
+        )),
       ],
     );
   }
