@@ -13,7 +13,7 @@
 - flutter_store
 
 ### 5장 플러터 위젯 - 레시피 앱 만들기
-- flutter_recipe
+- flutter_recipe : 임대림
 
 ### 6장 플러터 위젯 - 프로필 앱 만들기
 - flutter_profile
