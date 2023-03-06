@@ -16,9 +16,9 @@ class RecipePage extends StatelessWidget {
           children: [
             RecipeTitle(),
             RecipeMenu(),
-            RecipeListItem("coffee", "Made Coffee"),
-            RecipeListItem("burger", "Made Burger"),
-            RecipeListItem("pizza", "Made Pizza"),
+            const RecipeListItem("coffee", "Made Coffee"),
+            const RecipeListItem("burger", "Made Burger"),
+            const RecipeListItem("pizza", "Made Pizza"),
           ],
         ),
       ),
@@ -29,7 +29,7 @@ class RecipePage extends StatelessWidget {
     return AppBar(
       backgroundColor: Colors.white,
       elevation: 1.0,
-      actions: [
+      actions: const [
         Icon(
           CupertinoIcons.search,
           color: Colors.black,

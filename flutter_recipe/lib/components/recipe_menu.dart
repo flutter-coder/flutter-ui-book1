@@ -8,11 +8,11 @@ class RecipeMenu extends StatelessWidget {
       child: Row(
         children: [
           _buildMenuItem(Icons.food_bank, "ALL"),
-          SizedBox(width: 25),
+          const SizedBox(width: 25),
           _buildMenuItem(Icons.emoji_food_beverage, "Coffee"),
-          SizedBox(width: 25),
+          const SizedBox(width: 25),
           _buildMenuItem(Icons.fastfood, "Burger"),
-          SizedBox(width: 25),
+          const SizedBox(width: 25),
           _buildMenuItem(Icons.local_pizza, "Pizza"),
         ],
       ),
@@ -31,10 +31,10 @@ class RecipeMenu extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Icon(mIcon, color: Colors.redAccent, size: 30),
-          SizedBox(height: 5),
+          const SizedBox(height: 5),
           Text(
             text,
-            style: TextStyle(color: Colors.black87),
+            style: const TextStyle(color: Colors.black87),
           ),
         ],
       ),
