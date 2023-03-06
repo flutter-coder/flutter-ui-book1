@@ -22,8 +22,9 @@ class StorePage extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            Padding(
-              padding: const EdgeInsets.all(25.0),
+            // const는 변하지 않는 위젯 앞에 붙일 수 있다. const를 이용해 해당 위젯은 변하지 않음을 알려주면 중복된 위젯을 다시 그리지 않아 앱의 속도가 개선된다.
+            const Padding(
+              padding: EdgeInsets.all(25.0),
               child: Row(
                 children: [
                   Text("Woman", style: TextStyle(fontWeight: FontWeight.bold)),
@@ -37,7 +38,7 @@ class StorePage extends StatelessWidget {
               ),
             ),
             Expanded(child: Image.asset("assets/bag.jpeg", fit: BoxFit.cover)),
-            SizedBox(height: 2),
+            const SizedBox(height: 2),
             Expanded(child: Image.asset("assets/cloth.jpeg", fit: BoxFit.cover)),
           ],
         ),
