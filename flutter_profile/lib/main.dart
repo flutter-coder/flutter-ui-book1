@@ -28,11 +28,11 @@ class ProfilePage extends StatelessWidget {
       appBar: _buildProfileAppBar(),
       body: Column(
         children: [
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           ProfileHeader(),
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           ProfileCountInfo(),
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           ProfileButtons(),
           Expanded(child: ProfileTab()),
         ],
@@ -42,8 +42,8 @@ class ProfilePage extends StatelessWidget {
 
   AppBar _buildProfileAppBar() {
     return AppBar(
-      leading: Icon(Icons.arrow_back_ios),
-      title: Text("Profile"),
+      leading: const Icon(Icons.arrow_back_ios),
+      title: const Text("Profile"),
       centerTitle: true,
     );
   }

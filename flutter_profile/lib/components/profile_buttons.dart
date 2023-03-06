@@ -21,7 +21,7 @@ class ProfileButtons extends StatelessWidget {
         alignment: Alignment.center,
         width: 150,
         height: 45,
-        child: Text(
+        child: const Text(
           "Follow",
           style: TextStyle(color: Colors.white),
         ),
@@ -42,7 +42,7 @@ class ProfileButtons extends StatelessWidget {
         alignment: Alignment.center,
         width: 150,
         height: 45,
-        child: Text(
+        child: const Text(
           "Message",
           style: TextStyle(color: Colors.black),
         ),
