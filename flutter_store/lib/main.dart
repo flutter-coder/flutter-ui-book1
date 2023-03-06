@@ -22,8 +22,8 @@ class StorePage extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            Padding(
-              padding: const EdgeInsets.all(25.0),
+            const Padding(
+              padding: EdgeInsets.all(25.0),
               child: Row(
                 children: [
                   Text("Woman", style: TextStyle(fontWeight: FontWeight.bold)),
@@ -37,7 +37,7 @@ class StorePage extends StatelessWidget {
               ),
             ),
             Expanded(child: Image.asset("assets/bag.jpeg", fit: BoxFit.cover)),
-            SizedBox(height: 2),
+            const SizedBox(height: 2),
             Expanded(child: Image.asset("assets/cloth.jpeg", fit: BoxFit.cover)),
           ],
         ),
