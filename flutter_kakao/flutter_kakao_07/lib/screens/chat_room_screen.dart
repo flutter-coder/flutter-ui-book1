@@ -3,7 +3,6 @@ import 'package:flutter_kakao/components/chat_icon_button.dart';
 import 'package:flutter_kakao/components/my_chat.dart';
 import 'package:flutter_kakao/components/other_chat.dart';
 import 'package:flutter_kakao/components/time_line.dart';
-import 'package:flutter_kakao/models/chat.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:intl/intl.dart';
 
@@ -19,7 +18,7 @@ class _ChatRoomScreenState extends State<ChatRoomScreen> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Color(0xFFb2c7da),
+      color: const Color(0xFFb2c7da),
       child: Scaffold(
         backgroundColor: Colors.transparent,
         appBar: AppBar(
@@ -29,10 +28,10 @@ class _ChatRoomScreenState extends State<ChatRoomScreen> {
             style: Theme.of(context).textTheme.headline6,
           ),
           actions: [
-            Icon(FontAwesomeIcons.search, size: 20),
-            SizedBox(width: 25),
-            Icon(FontAwesomeIcons.bars, size: 20),
-            SizedBox(width: 25),
+            const Icon(FontAwesomeIcons.search, size: 20),
+            const SizedBox(width: 25),
+            const Icon(FontAwesomeIcons.bars, size: 20),
+            const SizedBox(width: 25),
           ],
         ),
         body: Column(
@@ -43,13 +42,13 @@ class _ChatRoomScreenState extends State<ChatRoomScreen> {
                   padding: const EdgeInsets.symmetric(horizontal: 16.0),
                   child: Column(
                     children: [
-                      TimeLine(time: "2021년 1월 1일 금요일"),
-                      OtherChat(
+                      const TimeLine(time: "2021년 1월 1일 금요일"),
+                      const OtherChat(
                         name: "홍길동",
                         text: "새해 복 많이 받으세요.",
                         time: "오전 10:10",
                       ),
-                      MyChat(
+                      const MyChat(
                         text: "선생님도 많이 받으십시오.",
                         time: "오후 2:15",
                       ),
@@ -64,14 +63,14 @@ class _ChatRoomScreenState extends State<ChatRoomScreen> {
               color: Colors.white,
               child: Row(
                 children: [
-                  ChatIconButton(icon: Icon(FontAwesomeIcons.plusSquare)),
+                  const ChatIconButton(icon: Icon(FontAwesomeIcons.plusSquare)),
                   Expanded(
                     child: Container(
                       child: TextField(
                         controller: _textController, // 1
                         maxLines: 1,
-                        style: TextStyle(fontSize: 20),
-                        decoration: InputDecoration(
+                        style: const TextStyle(fontSize: 20),
+                        decoration: const InputDecoration(
                           focusedBorder: InputBorder.none,
                           enabledBorder: InputBorder.none,
                         ),
@@ -79,8 +78,8 @@ class _ChatRoomScreenState extends State<ChatRoomScreen> {
                       ),
                     ),
                   ),
-                  ChatIconButton(icon: Icon(FontAwesomeIcons.smile)),
-                  ChatIconButton(icon: Icon(FontAwesomeIcons.cog)),
+                  const ChatIconButton(icon: Icon(FontAwesomeIcons.smile)),
+                  const ChatIconButton(icon: Icon(FontAwesomeIcons.cog)),
                 ],
               ),
             ),
