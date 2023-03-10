@@ -11,10 +11,10 @@ class CustomForm extends StatelessWidget {
       key: _formKey,
       child: Column(
         children: [
-          CustomTextFormField("Email"),
-          SizedBox(height: medium_gap),
-          CustomTextFormField("Password"),
-          SizedBox(height: large_gap),
+          const CustomTextFormField("Email"),
+          const SizedBox(height: medium_gap),
+          const CustomTextFormField("Password"),
+          const SizedBox(height: large_gap),
           // 3. TextButton 추가
           TextButton(
             onPressed: () {
@@ -23,7 +23,7 @@ class CustomForm extends StatelessWidget {
                 Navigator.pushNamed(context, "/home");
               }
             },
-            child: Text("Login"),
+            child: const Text("Login"),
           ),
         ],
       ),

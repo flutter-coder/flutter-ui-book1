@@ -12,7 +12,7 @@ class CustomTextFormField extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(text),
-        SizedBox(height: small_gap),
+        const SizedBox(height: small_gap),
         TextFormField(
           validator: (value) => value!.isEmpty
               ? "Please enter some text"
