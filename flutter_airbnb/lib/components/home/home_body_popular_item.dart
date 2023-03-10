@@ -22,7 +22,7 @@ class HomeBodyPopularItem extends StatelessWidget {
       padding: const EdgeInsets.only(bottom: gap_xl),
       child: Container(
         // 2. 화면이 줄어들 때 너무 작게 줄어드는 것을 방지하기 위해 최소 제약조건을 잡아준다.
-        constraints: BoxConstraints(
+        constraints: const BoxConstraints(
           minWidth: 320,
         ),
         child: SizedBox(
@@ -47,13 +47,13 @@ class HomeBodyPopularItem extends StatelessWidget {
           borderRadius: BorderRadius.circular(10),
           child: Image.asset("assets/${popularList[id]}", fit: BoxFit.cover),
         ),
-        SizedBox(height: gap_s),
+        const SizedBox(height: gap_s),
       ],
     );
   }
 
   Widget _buildPopularItemStar() {
-    return Column(
+    return const Column(
       children: [
         Row(
           children: [
@@ -79,7 +79,7 @@ class HomeBodyPopularItem extends StatelessWidget {
 
           overflow: TextOverflow.ellipsis, // 3. 글자가 3 라인을 벗어나면 ... 처리된다.
         ),
-        SizedBox(height: gap_s),
+        const SizedBox(height: gap_s),
       ],
     );
   }
@@ -87,17 +87,17 @@ class HomeBodyPopularItem extends StatelessWidget {
   Widget _buildPopularItemUserInfo() {
     return Row(
       children: [
-        CircleAvatar(
+        const CircleAvatar(
           backgroundImage: AssetImage("assets/p1.jpeg"),
         ),
-        SizedBox(width: gap_s),
+        const SizedBox(width: gap_s),
         Column(
           children: [
             Text(
               "데어",
               style: subtitle1(),
             ),
-            Text("한국"),
+            const Text("한국"),
           ],
         )
       ],

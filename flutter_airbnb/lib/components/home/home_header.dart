@@ -10,7 +10,7 @@ class HomeHeader extends StatelessWidget {
       width: double.infinity,
       height: header_height,
       child: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           image: DecorationImage(
             image: AssetImage("assets/background.jpeg"),
             fit: BoxFit.cover,
