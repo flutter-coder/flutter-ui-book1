@@ -22,7 +22,7 @@ class ProfileScreen extends StatelessWidget {
         backgroundColor: Colors.transparent,
         body: Column(
           children: [
-            Spacer(),
+            const Spacer(),
             Container(
               width: 110,
               height: 110,
@@ -33,32 +33,32 @@ class ProfileScreen extends StatelessWidget {
                     fit: BoxFit.cover),
               ),
             ),
-            SizedBox(height: 8),
+            const SizedBox(height: 8),
             Text(
               user.name,
-              style: TextStyle(
+              style: const TextStyle(
                 color: Colors.white,
                 fontSize: 20,
               ),
             ),
-            SizedBox(height: 5),
+            const SizedBox(height: 5),
             Text(
               user.intro,
-              style: TextStyle(
+              style: const TextStyle(
                 color: Colors.white,
                 fontSize: 15,
               ),
               maxLines: 1,
             ),
-            SizedBox(height: 20),
-            Divider(color: Colors.white),
+            const SizedBox(height: 20),
+            const Divider(color: Colors.white),
             if (user.name == me.name) _buildMyIcons() else _buildFriendIcons(),
           ],
         ),
         appBar: AppBar(
           backgroundColor: Colors.transparent, // 1
           leading: IconButton(
-            icon: Icon(
+            icon: const Icon(
               FontAwesomeIcons.times,
               size: 30,
               color: Colors.white,
@@ -68,10 +68,10 @@ class ProfileScreen extends StatelessWidget {
             },
           ),
           actions: [
-            RoundIconButton(icon: FontAwesomeIcons.gift),
-            SizedBox(width: 15),
-            RoundIconButton(icon: FontAwesomeIcons.cog),
-            SizedBox(width: 20),
+            const RoundIconButton(icon: FontAwesomeIcons.gift),
+            const SizedBox(width: 15),
+            const RoundIconButton(icon: FontAwesomeIcons.cog),
+            const SizedBox(width: 20),
           ],
         ),
       ),
@@ -79,7 +79,7 @@ class ProfileScreen extends StatelessWidget {
   }
 
   Widget _buildMyIcons() {
-    return Padding(
+    return const Padding(
       padding: EdgeInsets.symmetric(vertical: 18),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -101,7 +101,7 @@ class ProfileScreen extends StatelessWidget {
   }
 
   Widget _buildFriendIcons() {
-    return Padding(
+    return const Padding(
       padding: EdgeInsets.symmetric(vertical: 18),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,

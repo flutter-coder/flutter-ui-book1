@@ -17,14 +17,14 @@ class MyChat extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
-          Text(time, style: TextStyle(fontSize: 12)),
-          SizedBox(width: 5),
+          Text(time, style: const TextStyle(fontSize: 12)),
+          const SizedBox(width: 5),
           Flexible(
             child: Container(
               padding: const EdgeInsets.all(8),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(13),
-                color: Color(0xFFfeec34),
+                color: const Color(0xFFfeec34),
               ),
               child: Text(text),
             ),
