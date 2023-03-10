@@ -26,7 +26,7 @@ class ShoppingCartDetail extends StatelessWidget {
   }
 
   Widget _buildDetailNameAndPrice() {
-    return Padding(
+    return const Padding(
       padding: EdgeInsets.only(bottom: 10),
       child: Row(
         // 1. spaceBetween 이 적용되면 양 끝으로 벌어진다.
@@ -52,7 +52,7 @@ class ShoppingCartDetail extends StatelessWidget {
   }
 
   Widget _buildDetailRatingAndReviewCount() {
-    return Padding(
+    return const Padding(
       padding: EdgeInsets.only(bottom: 20),
       child: Row(
         children: [
@@ -72,12 +72,12 @@ class ShoppingCartDetail extends StatelessWidget {
 
   Widget _buildDetailColorOptions() {
     return Padding(
-      padding: EdgeInsets.only(bottom: 20),
+      padding: const EdgeInsets.only(bottom: 20),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text("Color Options"),
-          SizedBox(height: 10),
+          const Text("Color Options"),
+          const SizedBox(height: 10),
           Row(
             children: [
               // 3. 동일한 색상 아이콘을 재사용하기 위해 함수로 관리
@@ -96,7 +96,7 @@ class ShoppingCartDetail extends StatelessWidget {
   // 4. 다른 화면에서도 재사용하면 공통 컴포넌트 위젯으로 관리하는 것이 좋다.
   Widget _buildDetailIcon(Color mColor) {
     return Padding(
-      padding: EdgeInsets.only(right: 10),
+      padding: const EdgeInsets.only(right: 10),
       // 5. Stack의 첫 번째 Container 위젯위에 Positioned 위젯이 올라가는 형태
       child: Stack(
         children: [
@@ -134,10 +134,10 @@ class ShoppingCartDetail extends StatelessWidget {
             // 1. 추가
             context: context,
             builder: (context) => CupertinoAlertDialog(
-              title: Text("장바구니에 담으시겠습니까?"),
+              title: const Text("장바구니에 담으시겠습니까?"),
               actions: [
                 CupertinoDialogAction(
-                  child: Text("확인"),
+                  child: const Text("확인"),
                   onPressed: () {
                     Navigator.pop(context);
                   },
@@ -148,12 +148,12 @@ class ShoppingCartDetail extends StatelessWidget {
         },
         style: TextButton.styleFrom(
           backgroundColor: kAccentColor,
-          minimumSize: Size(300, 50),
+          minimumSize: const Size(300, 50),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(20),
           ),
         ),
-        child: Text(
+        child: const Text(
           "Add to Cart",
           style: TextStyle(color: Colors.white),
         ),
