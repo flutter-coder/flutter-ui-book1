@@ -22,7 +22,7 @@ class OtherChat extends StatelessWidget {
           CircleAvatar(
             backgroundImage: NetworkImage(friends[0].backgroundImage), // 1
           ),
-          SizedBox(width: 10),
+          const SizedBox(width: 10),
           Flexible(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -30,7 +30,7 @@ class OtherChat extends StatelessWidget {
                 Text(name),
                 Container(
                   child: Text(text),
-                  padding: EdgeInsets.all(8),
+                  padding: const EdgeInsets.all(8),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(13),
                     color: Colors.white,
@@ -39,10 +39,10 @@ class OtherChat extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             width: 5,
           ),
-          Text(time, style: TextStyle(fontSize: 12))
+          Text(time, style: const TextStyle(fontSize: 12))
         ],
       ),
     );

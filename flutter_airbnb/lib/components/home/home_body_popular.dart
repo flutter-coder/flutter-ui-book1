@@ -30,7 +30,7 @@ class HomeBodyPopular extends StatelessWidget {
           "게스트 후기 2,500,000개 이상, 평균 평점 4.7점(5점 만점)",
           style: body1(),
         ),
-        SizedBox(height: gap_m),
+        const SizedBox(height: gap_m),
       ],
     );
   }
@@ -45,9 +45,9 @@ class HomeBodyPopular extends StatelessWidget {
       // 6. Wrap에 대한 설명은 아래 그림을 보세요.
       children: [
         HomeBodyPopularItem(id: 0), // 7. id 값은 사진을 선택하기 위해 필요하다.
-        SizedBox(width: 7.5),
+        const SizedBox(width: 7.5),
         HomeBodyPopularItem(id: 1),
-        SizedBox(width: 7.5),
+        const SizedBox(width: 7.5),
         HomeBodyPopularItem(id: 2),
       ],
     );

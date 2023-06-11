@@ -28,7 +28,7 @@ class _ProfileTabState extends State<ProfileTab>
   Widget _buildTabBar() {
     return TabBar(
       controller: _tabController,
-      tabs: [
+      tabs: const [
         Tab(
             icon: Icon(
           Icons.directions_car,
@@ -46,7 +46,7 @@ class _ProfileTabState extends State<ProfileTab>
       controller: _tabController,
       children: [
         GridView.builder(
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisSpacing: 10,
             crossAxisCount: 3,
             mainAxisSpacing: 10,

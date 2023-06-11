@@ -25,7 +25,7 @@ class ChatCard extends StatelessWidget {
                 ),
                 title: Text(
                   chat.title,
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontWeight: FontWeight.w600,
                     fontSize: 16,
                   ),
@@ -38,9 +38,9 @@ class ChatCard extends StatelessWidget {
               children: [
                 Text(
                   chat.time,
-                  style: TextStyle(color: Color(0xFFa5a5a5), fontSize: 12),
+                  style: const TextStyle(color: Color(0xFFa5a5a5), fontSize: 12),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 5,
                 ),
                 if (chat.count != "0") // 1
@@ -49,10 +49,10 @@ class ChatCard extends StatelessWidget {
                         const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
-                        color: Color(0xFFde6344)),
+                        color: const Color(0xFFde6344)),
                     child: Text(
                       chat.count,
-                      style: TextStyle(color: Colors.white, fontSize: 12),
+                      style: const TextStyle(color: Colors.white, fontSize: 12),
                     ),
                   )
               ],

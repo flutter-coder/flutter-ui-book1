@@ -6,16 +6,16 @@ class ProfileHeader extends StatelessWidget {
     return Row(
       // 1
       children: [
-        SizedBox(width: 20),
+        const SizedBox(width: 20),
         _buildHeaderAvatar(),
-        SizedBox(width: 20),
+        const SizedBox(width: 20),
         _buildHeaderProfile(),
       ],
     );
   }
 
   Widget _buildHeaderAvatar() {
-    return SizedBox(
+    return const SizedBox(
       width: 100,
       height: 100,
       child: CircleAvatar(
@@ -25,7 +25,7 @@ class ProfileHeader extends StatelessWidget {
   }
 
   Widget _buildHeaderProfile() {
-    return Column(
+    return const Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(

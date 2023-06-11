@@ -40,7 +40,7 @@ class HomeBodyBanner extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
-            constraints: BoxConstraints(
+            constraints: const BoxConstraints(
               // 5. 글자 범위 최대 제약 조건 주기
               maxWidth: 250,
             ),
@@ -49,9 +49,9 @@ class HomeBodyBanner extends StatelessWidget {
               style: h4(mColor: Colors.white),
             ),
           ),
-          SizedBox(height: gap_m),
+          const SizedBox(height: gap_m),
           Container(
-            constraints: BoxConstraints(
+            constraints: const BoxConstraints(
               maxWidth: 250,
             ),
             child: Text(
@@ -59,7 +59,7 @@ class HomeBodyBanner extends StatelessWidget {
               style: subtitle1(mColor: Colors.white),
             ),
           ),
-          SizedBox(height: gap_m),
+          const SizedBox(height: gap_m),
           SizedBox(
             height: 35,
             width: 170,
